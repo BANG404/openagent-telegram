@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/anthropics/claude-plugins-official",
+  "revision": "ac996c0dde7fb2a9f805cd5277ffc95ecd44a321",
+  "path": "external_plugins/telegram",
+  "source_sha256": "8c872615fa3f86483636e95790d58e854a9f343950dc2fea6168c504b7f68b73",
+  "artifacts": {
+    "channel.mjs": "1d2de1ff4a1b91088ad0aad2f56acc6579be07d7be6794e6437a4a5f9cc89655",
+    "command.mjs": "9a0af20f8de0acd00ae168ff9445a7ab0839d280990f0d06b3f5a83e25b0ff59",
+    "integration.mjs": "c488bee830149946464eadbe43dcedd1646babb8e4113a789e463adfe80fb2cb",
+    "status.mjs": "db08b2ec3d5c5de96b264cb54b90fa34b76a9156d0219d084317a8769b76f118",
+    "unavailable.mjs": "d221f7f833ee1cde91556ed3770ec05b2aaf441753c16beaab3fc3e51cb5bd9f"
+  }
+}

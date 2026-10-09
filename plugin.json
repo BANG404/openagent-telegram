@@ -1,0 +1,81 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "telegram",
+  "version": "0.1.0",
+  "description": "Telegram messaging connected to OpenAgent conversations.",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/anthropics/claude-plugins-official/tree/ac996c0dde7fb2a9f805cd5277ffc95ecd44a321/external_plugins/telegram",
+  "repository": "https://github.com/BANG404/openagent-telegram",
+  "extensions": {
+    "openagent": {
+      "compatibility": {
+        "plugin_protocol": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "capabilities": [
+        "skills",
+        "mcp",
+        "commands"
+      ],
+      "mcp_tool_mode": "relay",
+      "mcp_tool_modes": {
+        "setup": "direct",
+        "telegram": "direct"
+      },
+      "commands": [
+        {
+          "id": "setup",
+          "label": "Setup",
+          "description": "Review connection prerequisites",
+          "argument": "none",
+          "command": "bin/command.mjs"
+        },
+        {
+          "id": "start",
+          "label": "Start channel",
+          "description": "Bind this channel to the desktop owner",
+          "argument": "none",
+          "command": "bin/command.mjs"
+        },
+        {
+          "id": "access",
+          "label": "Access policy",
+          "description": "Inspect or change pairing and allowed senders",
+          "argument": "optional_text",
+          "command": "bin/command.mjs"
+        }
+      ],
+      "i18n": {
+        "supported_locales": [
+          "en",
+          "zh"
+        ],
+        "default_locale": "en",
+        "translations": {
+          "en": {
+            "display_name": "telegram",
+            "description": "Telegram messaging connected to OpenAgent conversations.",
+            "commands.setup.label": "Setup",
+            "commands.setup.description": "Review connection prerequisites",
+            "commands.start.label": "Start channel",
+            "commands.start.description": "Bind this channel to the desktop owner",
+            "commands.access.label": "Access policy",
+            "commands.access.description": "Inspect or change pairing and allowed senders"
+          },
+          "zh": {
+            "display_name": "telegram",
+            "description": "将 Telegram 消息连接到 OpenAgent 会话。",
+            "commands.setup.label": "配置",
+            "commands.setup.description": "查看连接要求",
+            "commands.start.label": "启动通道",
+            "commands.start.description": "将通道绑定到本机管理会话",
+            "commands.access.label": "访问策略",
+            "commands.access.description": "查看或调整配对和允许发送者"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+node_modules/
+.evidence/
+credentials.json
+.env
