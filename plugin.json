@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "telegram",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Telegram messaging connected to OpenAgent conversations.",
   "license": "Apache-2.0",
   "homepage": "https://github.com/anthropics/claude-plugins-official/tree/ac996c0dde7fb2a9f805cd5277ffc95ecd44a321/external_plugins/telegram",
@@ -12,7 +12,10 @@
         "plugin_protocol": {
           "min": 1,
           "max": 1
-        }
+        },
+        "features": [
+          "configuration-v1"
+        ]
       },
       "capabilities": [
         "skills",
@@ -62,7 +65,9 @@
             "commands.start.label": "Start channel",
             "commands.start.description": "Bind this channel to the desktop owner",
             "commands.access.label": "Access policy",
-            "commands.access.description": "Inspect or change pairing and allowed senders"
+            "commands.access.description": "Inspect or change pairing and allowed senders",
+            "configuration.token.label": "Bot token",
+            "configuration.token.description": "Saved privately for this plugin. Leave the password field blank to keep its saved value."
           },
           "zh": {
             "display_name": "telegram",
@@ -72,9 +77,25 @@
             "commands.start.label": "启动通道",
             "commands.start.description": "将通道绑定到本机管理会话",
             "commands.access.label": "访问策略",
-            "commands.access.description": "查看或调整配对和允许发送者"
+            "commands.access.description": "查看或调整配对和允许发送者",
+            "configuration.token.label": "访问令牌",
+            "configuration.token.description": "此插件的密钥私有保存；密码框留空表示保留已保存的密钥。"
           }
         }
+      },
+      "configuration": {
+        "version": 1,
+        "fields": [
+          {
+            "key": "token",
+            "label": "Bot token",
+            "description": "Saved privately for this plugin. Leave the password field blank to keep its saved value.",
+            "type": "string",
+            "secret": true,
+            "required": true,
+            "env": "TELEGRAM_BOT_TOKEN"
+          }
+        ]
       }
     }
   }

@@ -4,10 +4,10 @@
   "path": "external_plugins/telegram",
   "source_sha256": "8c872615fa3f86483636e95790d58e854a9f343950dc2fea6168c504b7f68b73",
   "artifacts": {
-    "channel.mjs": "1d2de1ff4a1b91088ad0aad2f56acc6579be07d7be6794e6437a4a5f9cc89655",
+    "channel.mjs": "6e2fd4ad9207e392b450ff352d4fde16f215f59d5fbf85159f1f562314817c53",
     "command.mjs": "9a0af20f8de0acd00ae168ff9445a7ab0839d280990f0d06b3f5a83e25b0ff59",
-    "integration.mjs": "c488bee830149946464eadbe43dcedd1646babb8e4113a789e463adfe80fb2cb",
-    "status.mjs": "db08b2ec3d5c5de96b264cb54b90fa34b76a9156d0219d084317a8769b76f118",
-    "unavailable.mjs": "d221f7f833ee1cde91556ed3770ec05b2aaf441753c16beaab3fc3e51cb5bd9f"
+    "integration.mjs": "faea10a0e9a2fb5cca9fc3af6a197000cb339a66006b1c82802f6d0b91a019dd",
+    "status.mjs": "8f2e2b2a46efb184c2bb6432f32f97acbf4aa15cbce207d208cbd8357bf01c23",
+    "unavailable.mjs": "49ce740a291f28b7334c083922f17d8278a8e784b1f1491e4dc904c11668643b"
   }
 }

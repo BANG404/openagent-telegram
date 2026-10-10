@@ -15503,7 +15503,7 @@ class StdioServerTransport {
   }
 }
 
-// status.mjs
+// src/status.mjs
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 var root = process.env.PLUGIN_ROOT;

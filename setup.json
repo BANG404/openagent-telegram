@@ -1,6 +1,6 @@
 {
   "revision": "ac996c0dde7fb2a9f805cd5277ffc95ecd44a321",
   "prerequisites": [
-    "Node.js, Telegram bot token in PLUGIN_DATA/channel/.env, desktop channel binding and approved senders."
+    "Node.js, Telegram bot token saved in plugin settings (legacy channel/.env remains a fallback), desktop channel binding and approved senders."
   ]
 }

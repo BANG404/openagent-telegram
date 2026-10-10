@@ -2,7 +2,7 @@
   "name": "openagent-telegram",
   "private": true,
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.29.0",
     "grammy": "^1.21.0"
@@ -10,6 +10,5 @@
   "scripts": {
     "test": "bun test tests",
     "build": "bun scripts/build.mjs"
-  },
-  "devDependencies": null
+  }
 }
